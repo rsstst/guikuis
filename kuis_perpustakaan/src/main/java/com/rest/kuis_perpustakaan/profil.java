@@ -8,7 +8,7 @@ package com.rest.kuis_perpustakaan;
  *
  * @author WINDOWS 10
  */
-public class profil extends main {
+public class profil extends menu {
     
 public String userProfil, emailProfil;
 

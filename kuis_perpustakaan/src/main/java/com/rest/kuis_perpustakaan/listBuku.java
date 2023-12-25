@@ -8,7 +8,7 @@ package com.rest.kuis_perpustakaan;
  *
  * @author rsstst
  */
-public class listBuku extends main {
+public class listBuku extends menu {
 
     /**
      * Creates new form listBuku

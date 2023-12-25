@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  *
  * @author rsstst
  */
-public class main extends javax.swing.JFrame {
+public class main extends menu {
     
     DefaultTableModel mainTable;
 
@@ -142,11 +142,6 @@ public class main extends javax.swing.JFrame {
         jMenu2.setText("Buku");
 
         jMenuItem3.setText("List Buku");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
-            }
-        });
         jMenu2.add(jMenuItem3);
 
         jMenuItem5.setText("Pinjam Buku");
@@ -218,28 +213,12 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-    dispose();
-    login lgn = new login ();
-    lgn.setVisible(true);
-    lgn.setLocationRelativeTo(null);      // TODO add your handling code here:
+
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-    dispose();
-    profil prfl = new profil ();
-    prfl.setVisible(true);
-    prfl.setLocationRelativeTo(null);
-    prfl.profilUser.setText(register.userreg);
-    prfl.emailUser.setText(register.emailreg);
-    // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-    dispose();
-    main man = new main ();
-    man.setVisible(true);
-    man.setLocationRelativeTo(null);            // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -266,6 +245,9 @@ public class main extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
