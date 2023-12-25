@@ -142,7 +142,7 @@ public class login extends javax.swing.JFrame {
     reg.pack();
     reg.setLocationRelativeTo(null);
     reg.setDefaultCloseOperation(register.EXIT_ON_CLOSE);
-    dispose();        
+    dispose();//test
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
