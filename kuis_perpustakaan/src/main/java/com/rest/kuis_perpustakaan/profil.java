@@ -10,7 +10,7 @@ package com.rest.kuis_perpustakaan;
  */
 public class profil extends main {
     
-public String userProfil,emailProfil;
+public String userProfil, emailProfil;
 
     /**
      * Creates new form profil
@@ -119,10 +119,10 @@ public String userProfil,emailProfil;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel emailUser;
+    public javax.swing.JLabel emailUser;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel profilUser;
+    public javax.swing.JLabel profilUser;
     // End of variables declaration//GEN-END:variables
 }
