@@ -11,6 +11,10 @@ package com.rest.kuis_perpustakaan;
 public class Kuis_perpustakaan {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+       login awal = new login();
+       awal.setVisible(true);
+       awal.pack();
+       awal.setLocationRelativeTo(null);
+       awal.setDefaultCloseOperation(login.EXIT_ON_CLOSE);
     }
 }
