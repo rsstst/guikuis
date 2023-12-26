@@ -49,14 +49,11 @@ public class menu extends javax.swing.JFrame {
         jMenu2.add(jMenuItem3);
 
         jMenuItem5.setText("Pinjam Buku");
-<<<<<<< HEAD
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem5ActionPerformed(evt);
             }
         });
-=======
->>>>>>> master
         jMenu2.add(jMenuItem5);
 
         jMenuItem4.setText("Buku yang dipinjam");
