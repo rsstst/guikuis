@@ -8,7 +8,7 @@ package com.rest.kuis_perpustakaan;
  *
  * @author rsstst
  */
-//test update
+//test update 2
 public class Kuis_perpustakaan {
 
     public static void main(String[] args) {
