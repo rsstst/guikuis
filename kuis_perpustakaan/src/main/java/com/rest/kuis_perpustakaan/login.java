@@ -37,9 +37,9 @@ public class login extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        registerBtn = new javax.swing.JButton();
+        loginBtn = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        registerBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -77,25 +77,25 @@ public class login extends javax.swing.JFrame {
 
         jPanel3.setLayout(new java.awt.GridLayout(3, 0));
 
-        registerBtn.setText("Login");
+        loginBtn.setText("Login");
+        loginBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginBtnActionPerformed(evt);
+            }
+        });
+        jPanel3.add(loginBtn);
+
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Buat akun?");
+        jPanel3.add(jLabel2);
+
+        registerBtn.setText("Register");
         registerBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 registerBtnActionPerformed(evt);
             }
         });
         jPanel3.add(registerBtn);
-
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Buat akun?");
-        jPanel3.add(jLabel2);
-
-        jButton1.setText("Register");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -136,7 +136,7 @@ public class login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void registerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerBtnActionPerformed
     register reg = new register();
     reg.setVisible(true);
     reg.pack();
@@ -144,11 +144,11 @@ public class login extends javax.swing.JFrame {
     reg.setDefaultCloseOperation(register.EXIT_ON_CLOSE);
     dispose();//test
 // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_registerBtnActionPerformed
 
-    private void registerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerBtnActionPerformed
-    if ((emailLogin.getText().equals(register.emailreg)) && (pswLogin.getText().equals(register.passreg))){
-    menu home = new menu ();
+    private void loginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginBtnActionPerformed
+    if ((emailLogin.getText().equals(register.emailUser)) && (pswLogin.getText().equals(register.pswUser))){
+    main home = new main ();
     home.setVisible(true);
     home.pack();
     home.setLocationRelativeTo(null);
@@ -158,7 +158,7 @@ public class login extends javax.swing.JFrame {
     JOptionPane.showMessageDialog(this,"username dan password tidak sesuai","Konfirm Password",JOptionPane.ERROR_MESSAGE);
 
 }        // TODO add your handling code here:
-    }//GEN-LAST:event_registerBtnActionPerformed
+    }//GEN-LAST:event_loginBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -204,7 +204,6 @@ public class login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField emailLogin;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -212,6 +211,7 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JButton loginBtn;
     private javax.swing.JPasswordField pswLogin;
     private javax.swing.JButton registerBtn;
     // End of variables declaration//GEN-END:variables

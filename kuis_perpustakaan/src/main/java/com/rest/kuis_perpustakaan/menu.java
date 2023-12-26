@@ -121,8 +121,8 @@ public class menu extends javax.swing.JFrame {
     profil prfl = new profil ();
     prfl.setVisible(true);
     prfl.setLocationRelativeTo(null);
-    prfl.profilUser.setText(register.userreg);
-    prfl.emailUser.setText(register.emailreg);
+    prfl.profilUser.setText(register.username);
+    prfl.emailUser.setText(register.emailUser);
     // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
@@ -134,7 +134,6 @@ public class menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
-    dispose();
     maupinjam pin = new maupinjam ();
     pin.setVisible(true);
     pin.setLocationRelativeTo(null);

@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  * @author rsstst
  */
 public class register extends javax.swing.JFrame {
-        public static String emailreg,userreg,passreg;
+        public static String emailUser, username, pswUser;
     /**
      * Creates new form NewJFrame
      */
@@ -150,19 +150,19 @@ public class register extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void registerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerBtnActionPerformed
-if (pswRegister.getText().equals(pswRegister2.getText())){
-emailreg = emailRegister.getText();
-userreg = usnRegister.getText();
-passreg = pswRegister.getText();
+    if (pswRegister.getText().equals(pswRegister2.getText())){
+    emailUser = emailRegister.getText();
+    username = usnRegister.getText();
+    pswUser = pswRegister.getText();
 
-login lg = new login ();
-lg.setVisible(true);
-lg.pack();
-lg.setLocationRelativeTo(null);
-lg.setDefaultCloseOperation(register.EXIT_ON_CLOSE);
-dispose();
-}else{
-JOptionPane.showMessageDialog(this,"password tidak sama","Konfirm Password", JOptionPane.ERROR_MESSAGE);
+    login lg = new login ();
+    lg.setVisible(true);
+    lg.pack();
+    lg.setLocationRelativeTo(null);
+    lg.setDefaultCloseOperation(register.EXIT_ON_CLOSE);
+    dispose();
+    }else{
+    JOptionPane.showMessageDialog(this,"Password tidak sama","Konfirm Password", JOptionPane.ERROR_MESSAGE);
 
 
 }        // TODO add your handling code here:
