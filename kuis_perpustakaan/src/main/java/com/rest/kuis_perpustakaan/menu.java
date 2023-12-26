@@ -104,7 +104,7 @@ public class menu extends javax.swing.JFrame {
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
     dispose();
-    bukudipinjam budi = new bukudipinjam ();
+    listpinjam budi = new listpinjam ();
     budi.setVisible(true);
     budi.setLocationRelativeTo(null);         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem4ActionPerformed
@@ -135,7 +135,7 @@ public class menu extends javax.swing.JFrame {
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
     dispose();
-    pinjam pin = new pinjam ();
+    maupinjam pin = new maupinjam ();
     pin.setVisible(true);
     pin.setLocationRelativeTo(null);
     // TODO add your handling code here:

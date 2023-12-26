@@ -1,11 +1,10 @@
+com\rest\kuis_perpustakaan\main.class
+com\rest\kuis_perpustakaan\Kuis_perpustakaan.class
+com\rest\kuis_perpustakaan\main$1.class
+com\rest\kuis_perpustakaan\register$1.class
+com\rest\kuis_perpustakaan\register.class
 com\rest\kuis_perpustakaan\listBuku$1.class
 com\rest\kuis_perpustakaan\login$1.class
 com\rest\kuis_perpustakaan\main$2.class
-com\rest\kuis_perpustakaan\main.class
-com\rest\kuis_perpustakaan\Kuis_perpustakaan.class
 com\rest\kuis_perpustakaan\listBuku.class
-com\rest\kuis_perpustakaan\main$5.class
-com\rest\kuis_perpustakaan\main$1.class
 com\rest\kuis_perpustakaan\login.class
-com\rest\kuis_perpustakaan\register$1.class
-com\rest\kuis_perpustakaan\register.class
