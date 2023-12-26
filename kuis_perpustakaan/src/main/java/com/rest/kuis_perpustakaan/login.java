@@ -148,7 +148,7 @@ public class login extends javax.swing.JFrame {
 
     private void registerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerBtnActionPerformed
     if ((emailLogin.getText().equals(register.emailreg)) && (pswLogin.getText().equals(register.passreg))){
-    main home = new main ();
+    menu home = new menu ();
     home.setVisible(true);
     home.pack();
     home.setLocationRelativeTo(null);
