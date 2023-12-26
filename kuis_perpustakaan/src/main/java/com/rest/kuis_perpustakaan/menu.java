@@ -49,6 +49,14 @@ public class menu extends javax.swing.JFrame {
         jMenu2.add(jMenuItem3);
 
         jMenuItem5.setText("Pinjam Buku");
+<<<<<<< HEAD
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+=======
+>>>>>>> master
         jMenu2.add(jMenuItem5);
 
         jMenuItem4.setText("Buku yang dipinjam");
@@ -98,7 +106,13 @@ public class menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+    dispose();
+    listpinjam budi = new listpinjam ();
+    budi.setVisible(true);
+    budi.setLocationRelativeTo(null);         // TODO add your handling code here:
+
         // TODO add your handling code here:
+
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
@@ -124,6 +138,14 @@ public class menu extends javax.swing.JFrame {
     man.setVisible(true);
     man.setLocationRelativeTo(null);            // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+    dispose();
+    maupinjam pin = new maupinjam ();
+    pin.setVisible(true);
+    pin.setLocationRelativeTo(null);
+    // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     /**
      * @param args the command line arguments
