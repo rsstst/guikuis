@@ -109,10 +109,7 @@ public class menu extends javax.swing.JFrame {
     dispose();
     listpinjam budi = new listpinjam ();
     budi.setVisible(true);
-    budi.setLocationRelativeTo(null);         // TODO add your handling code here:
-
-        // TODO add your handling code here:
-
+    budi.setLocationRelativeTo(null);     
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
