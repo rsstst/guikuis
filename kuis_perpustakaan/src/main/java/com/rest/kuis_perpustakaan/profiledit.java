@@ -4,13 +4,15 @@
  */
 package com.rest.kuis_perpustakaan;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author WINDOWS 10
  */
 public class profiledit extends menu {
     
-
+public String newEmail,newUser,newPass;
     /**
      * Creates new form profil
      */
@@ -104,7 +106,25 @@ public class profiledit extends menu {
     }//GEN-LAST:event_ubahUserActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-
+     newEmail = ubahEmail.getText();
+     if (newEmail.equals("")){} 
+     else {register.emailUser = ubahEmail.getText();}
+     
+     newUser = ubahUser.getText();
+     if (newUser.equals("")){} 
+     else {register.username = ubahUser.getText();}
+     
+     newPass = ubahPass.getText();
+     if (newPass.equals("")){} 
+     else {register.pswUser = ubahPass.getText();}
+        
+    profil prfl = new profil ();
+    prfl.setVisible(true);
+    prfl.setLocationRelativeTo(null);
+    prfl.profilUser.setText(register.username);
+    prfl.emailUser.setText(register.emailUser);
+    JOptionPane.showMessageDialog(this, "Data Telah Diperbarui");
+    dispose();
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
