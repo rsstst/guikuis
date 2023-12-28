@@ -137,6 +137,7 @@ public class menu extends javax.swing.JFrame {
     maupinjam pin = new maupinjam ();
     pin.setVisible(true);
     pin.setLocationRelativeTo(null);
+    pin.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 

@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.rest.kuis_perpustakaan;
+import java.time.LocalDate;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JOptionPane;
 
@@ -43,7 +44,8 @@ public class maupinjam extends menu {
         kodeBukuPinjam = new javax.swing.JTextField();
         tambahPinjamBtn = new javax.swing.JButton();
         hapusPinjamBtn = new javax.swing.JButton();
-        jSpinner1 = new javax.swing.JSpinner();
+        spinnerLama = new javax.swing.JSpinner();
+        jLabel3 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabelPinjam = new javax.swing.JTable();
@@ -89,6 +91,11 @@ public class maupinjam extends menu {
         jPanel2.add(tambahPinjamBtn, gridBagConstraints);
 
         hapusPinjamBtn.setText("Hapus");
+        hapusPinjamBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hapusPinjamBtnActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -96,13 +103,21 @@ public class maupinjam extends menu {
         gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 0);
         jPanel2.add(hapusPinjamBtn, gridBagConstraints);
 
-        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(0, null, 14, 1));
-        jSpinner1.setToolTipText("");
+        spinnerLama.setModel(new javax.swing.SpinnerNumberModel(1, 1, 14, 1));
+        spinnerLama.setToolTipText("");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        jPanel2.add(jSpinner1, gridBagConstraints);
+        jPanel2.add(spinnerLama, gridBagConstraints);
+
+        jLabel3.setText("hari");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.ipadx = 5;
+        gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
+        jPanel2.add(jLabel3, gridBagConstraints);
 
         jPanel5.setPreferredSize(new java.awt.Dimension(215, 302));
 
@@ -136,7 +151,7 @@ public class maupinjam extends menu {
                 .addContainerGap())
         );
 
-        jPanel1.setLayout(new java.awt.GridLayout());
+        jPanel1.setLayout(new java.awt.GridLayout(1, 0));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -174,26 +189,45 @@ public class maupinjam extends menu {
 
     private void tambahPinjamBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahPinjamBtnActionPerformed
         try{
-           int kode = Integer.parseInt(kodeBukuPinjam.getText());
-           
-           switch (kode){
-               case 001 -> {
-                   
-               }
-               case 002 -> {
-                   
-               }
-               case 003 -> {
-                   
-               }
-               case 004 -> {
-                   
-               }
-           }
-       } catch (NumberFormatException e){
-           JOptionPane.showMessageDialog(this, "Masukkan kode buku dengan benar", "Peringatan", JOptionPane.ERROR_MESSAGE);
-       }
+            
+            int value = (Integer) spinnerLama.getValue();
+            
+            int kode = Integer.parseInt(kodeBukuPinjam.getText());
+            LocalDate time = LocalDate.now();
+            LocalDate timeThen = time.plusDays(value);
+
+            switch (kode){
+                case 001 -> {
+                    Object sao[] = {"001", "Sword Art Online", time, timeThen};
+                    model.addRow(sao);
+                    System.out.println(time);
+                }
+                case 002 -> {
+                    Object eleven[] = {"002", "11:11", time, timeThen};
+                    model.addRow(eleven);
+                }
+                case 003 -> {
+                    Object librarian[] = {"003", "So You Want To Be A Librarian", time, timeThen};
+                    model.addRow(librarian);
+                }
+                case 004 -> {
+                    Object marriage[] = {"004", "Heartbreaking Marriage", time, timeThen};
+                    model.addRow(marriage);
+                }
+            }
+        } catch (NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Masukkan kode buku dengan benar", "Peringatan", JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_tambahPinjamBtnActionPerformed
+
+    private void hapusPinjamBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusPinjamBtnActionPerformed
+        try {
+        int index = tabelPinjam.getSelectedRow();
+        model.removeRow(index);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Pilih mana yang ingin dihapus", "Peringatan", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_hapusPinjamBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -234,13 +268,14 @@ public class maupinjam extends menu {
     private javax.swing.JButton hapusPinjamBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTextField kodeBukuPinjam;
+    private javax.swing.JSpinner spinnerLama;
     private javax.swing.JTable tabelPinjam;
     private javax.swing.JButton tambahPinjamBtn;
     // End of variables declaration//GEN-END:variables
