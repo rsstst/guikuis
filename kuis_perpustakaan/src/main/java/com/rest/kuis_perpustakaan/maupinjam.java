@@ -200,7 +200,6 @@ public class maupinjam extends menu {
                 case 001 -> {
                     Object sao[] = {"001", "Sword Art Online", time, timeThen};
                     model.addRow(sao);
-                    System.out.println(time);
                 }
                 case 002 -> {
                     Object eleven[] = {"002", "11:11", time, timeThen};
