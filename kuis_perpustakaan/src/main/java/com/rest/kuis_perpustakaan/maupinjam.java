@@ -46,6 +46,7 @@ public class maupinjam extends menu {
         hapusPinjamBtn = new javax.swing.JButton();
         spinnerLama = new javax.swing.JSpinner();
         jLabel3 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabelPinjam = new javax.swing.JTable();
@@ -118,6 +119,20 @@ public class maupinjam extends menu {
         gridBagConstraints.ipadx = 5;
         gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
         jPanel2.add(jLabel3, gridBagConstraints);
+
+        jButton1.setText("Konfirmasi");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.weightx = 0.1;
+        gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 0);
+        jPanel2.add(jButton1, gridBagConstraints);
 
         jPanel5.setPreferredSize(new java.awt.Dimension(215, 302));
 
@@ -228,6 +243,15 @@ public class maupinjam extends menu {
         }
     }//GEN-LAST:event_hapusPinjamBtnActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        int answ = JOptionPane.showConfirmDialog(this, "Konfirmasi buku yang ingin dipinjam", "Konfirmasi", JOptionPane.YES_NO_OPTION);
+        if (answ == JOptionPane.YES_OPTION){
+            
+        }
+        
+    
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -265,6 +289,7 @@ public class maupinjam extends menu {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton hapusPinjamBtn;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

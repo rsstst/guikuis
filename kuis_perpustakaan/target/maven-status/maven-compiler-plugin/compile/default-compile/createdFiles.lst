@@ -14,8 +14,10 @@ com\rest\kuis_perpustakaan\profil$2.class
 com\rest\kuis_perpustakaan\register$2.class
 com\rest\kuis_perpustakaan\menu$6.class
 com\rest\kuis_perpustakaan\menu$3.class
+com\rest\kuis_perpustakaan\listpinjam$2.class
 com\rest\kuis_perpustakaan\profil.class
 com\rest\kuis_perpustakaan\menu$4.class
+com\rest\kuis_perpustakaan\maupinjam$4.class
 com\rest\kuis_perpustakaan\login$1.class
 com\rest\kuis_perpustakaan\main$2.class
 com\rest\kuis_perpustakaan\menu.class
