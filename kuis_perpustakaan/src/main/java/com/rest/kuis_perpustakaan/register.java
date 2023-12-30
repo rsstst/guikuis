@@ -150,22 +150,24 @@ public class register extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void registerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerBtnActionPerformed
-    if (pswRegister.getText().equals(pswRegister2.getText())){
-    emailUser = emailRegister.getText();
-    username = usnRegister.getText();
-    pswUser = pswRegister.getText();
+        if (emailRegister.getText().equals("") || usnRegister.getText().equals("") || pswRegister.getText().equals("") || pswRegister2.getText().equals("")){
+            JOptionPane.showMessageDialog(this, "Masukkan data dengan benar", "KOnfirmasi", JOptionPane.ERROR_MESSAGE);
+        } else {
+            if (pswRegister.getText().equals(pswRegister2.getText())){
+            emailUser = emailRegister.getText();
+            username = usnRegister.getText();pswUser = pswRegister.getText();
 
-    login lg = new login ();
-    lg.setVisible(true);
-    lg.pack();
-    lg.setLocationRelativeTo(null);
-    lg.setDefaultCloseOperation(register.EXIT_ON_CLOSE);
-    dispose();
-    }else{
-    JOptionPane.showMessageDialog(this,"Password tidak sama","Konfirm Password", JOptionPane.ERROR_MESSAGE);
-
-
-}        // TODO add your handling code here:
+            login lg = new login ();
+            lg.setVisible(true);
+            lg.pack();
+            lg.setLocationRelativeTo(null);
+            lg.setDefaultCloseOperation(register.EXIT_ON_CLOSE);
+            dispose();
+    
+            } else {
+            JOptionPane.showMessageDialog(this,"Password tidak sama","Konfirmasi", JOptionPane.ERROR_MESSAGE);
+            }
+        }
     }//GEN-LAST:event_registerBtnActionPerformed
 
     /**

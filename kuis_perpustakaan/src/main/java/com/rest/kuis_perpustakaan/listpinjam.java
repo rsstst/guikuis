@@ -111,7 +111,7 @@ public class listpinjam extends menu {
                 .addGap(119, 119, 119))
         );
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\Kuliah\\Semester 3\\Pemrogaman GUI\\guikuis\\kuis_perpustakaan\\src\\main\\java\\com\\rest\\kuis_perpustakaan\\book_icon_cropped-removebg-preview (1) (1) (1).png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\Kuliah\\Semester 3\\Pemrogaman GUI\\guikuis\\kuis_perpustakaan\\src\\main\\java\\com\\rest\\kuis_perpustakaan\\book_icon.png")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
