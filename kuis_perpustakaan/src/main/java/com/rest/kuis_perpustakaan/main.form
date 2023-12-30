@@ -187,5 +187,15 @@
         </Container>
       </SubComponents>
     </Container>
+<<<<<<< Updated upstream
+=======
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\windows\Documents\GitHub\guikuis\kuis_perpustakaan\src\main\java\com\rest\kuis_perpustakaan\book_icon_cropped-removebg-preview (1) (1) (1).png"/>
+        </Property>
+      </Properties>
+    </Component>
+>>>>>>> Stashed changes
   </SubComponents>
 </Form>

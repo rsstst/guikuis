@@ -131,6 +131,11 @@ public class main extends menu {
                 .addGap(119, 119, 119))
         );
 
+<<<<<<< Updated upstream
+=======
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\windows\\Documents\\GitHub\\guikuis\\kuis_perpustakaan\\src\\main\\java\\com\\rest\\kuis_perpustakaan\\book_icon_cropped-removebg-preview (1) (1) (1).png")); // NOI18N
+
+>>>>>>> Stashed changes
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(

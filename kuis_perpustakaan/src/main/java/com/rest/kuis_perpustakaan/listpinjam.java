@@ -100,6 +100,11 @@ public class listpinjam extends menu {
                 .addContainerGap(158, Short.MAX_VALUE))
         );
 
+<<<<<<< Updated upstream
+=======
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\windows\\Documents\\GitHub\\guikuis\\kuis_perpustakaan\\src\\main\\java\\com\\rest\\kuis_perpustakaan\\book_icon_cropped-removebg-preview (1) (1) (1).png")); // NOI18N
+
+>>>>>>> Stashed changes
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
