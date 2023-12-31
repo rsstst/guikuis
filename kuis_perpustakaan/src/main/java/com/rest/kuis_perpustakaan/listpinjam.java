@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  */
 public class listpinjam extends menu {
     
-    DefaultTableModel mainTable;
+    public DefaultTableModel modelPinjam;
 
     /**
      * Creates new form main
@@ -20,10 +20,8 @@ public class listpinjam extends menu {
     public listpinjam() {
         initComponents();
         
-        Object col[] = {"Kode Buku", "Judul Buku", "Penulis", "Tahun Terbit"};
-        Object data[][] = {{}};
-        mainTable = new DefaultTableModel(data, col);
-        tabelMain.setModel(mainTable);
+        maupinjam asd = new maupinjam();
+        tabelMain.setModel(asd.model);
     }
 
     /**
@@ -203,6 +201,6 @@ public class listpinjam extends menu {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tabelMain;
+    public javax.swing.JTable tabelMain;
     // End of variables declaration//GEN-END:variables
 }
