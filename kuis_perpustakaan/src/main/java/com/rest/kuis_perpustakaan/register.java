@@ -155,7 +155,8 @@ public class register extends javax.swing.JFrame {
         } else {
             if (pswRegister.getText().equals(pswRegister2.getText())){
             emailUser = emailRegister.getText();
-            username = usnRegister.getText();pswUser = pswRegister.getText();
+            username = usnRegister.getText();
+            pswUser = pswRegister.getText();
 
             login lg = new login ();
             lg.setVisible(true);
